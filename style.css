@@ -1,5 +1,5 @@
 body {
-    background-color: green;
+    background-color: #AFBFA3;
 }
 
 header {
@@ -10,11 +10,11 @@ header {
 }
 
 .nav-item {
-    background-color: white;
+    /* background-color: white; */
     width: 33.3333%;
     height: 100px;
     margin: 0 20px;
-    line-height: 68px;
+
 }
 
 .nav-left > img {
@@ -28,14 +28,20 @@ header {
 
 .nav-middle > ul > div {
     display: inline-block;
-    background-color: pink;
-    padding: 0 25px;
+    /* background-color: pink; */
+    padding: 15px 25px;
 }
 
 .nav-middle > ul > div > li {
     list-style: none;
-    background-color: red;
-    font-size: 21px;
+    /* background-color: red; */
+    font-size: 18px;
+    font-family: 'Fredoka';
+    background-color: #FFF9E2;
+    color: #AFBFA3;
+    padding: 10px 20px;
+    vertical-align: middle;
+    border-radius: 30px;
 }
 
 .nav-right {
@@ -45,5 +51,26 @@ header {
 .nav-right > object {
     height: 40px;
     margin: 30px 20px;
-    color: red;
+    /* color: red; */
+}
+
+.container {
+    text-align: center;
+    margin: 40px 40%;
+    color: #FFF9E2;
+    font-family: 'Adamina';
+}
+
+.container > input {
+    width: 200px;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.btn {
+    background-color: #FFF9E2;
+    color: #AFBFA3;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
 }
