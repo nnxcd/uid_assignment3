@@ -1,5 +1,5 @@
 body {
-    background-color: #AFBFA3;
+    margin: 0 0;
 }
 
 header {
@@ -14,7 +14,6 @@ header {
     width: 33.3333%;
     height: 100px;
     margin: 0 20px;
-
 }
 
 .nav-left > img {
@@ -29,7 +28,7 @@ header {
 .nav-middle > ul > a > .nav-box {
     display: inline-block;
     /* background-color: pink; */
-    padding: 15px 25px;
+    padding: 15px 2.5%;
 }
 
 .nav-middle > ul > a > .nav-box > li:hover {
@@ -51,6 +50,7 @@ header {
 
 .nav-right {
     text-align: right;
+    margin-right: 50px;
 }
 
 .nav-right > object {
@@ -59,14 +59,16 @@ header {
     /* color: red; */
 }
 
-.container {
+.container > .box-1 {
     text-align: center;
-    margin: 40px 40%;
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-right: 40%;
     color: #FFF9E2;
-    font-family: 'Adamina';
+    font-family: 'Adamina', serif;
 }
 
-.container > input {
+.container > .box-1 > input {
     width: 200px;
     margin-top: 15px;
     height: 40px;
@@ -78,9 +80,16 @@ header {
     border: none;
     border-radius: 7px;
     font-size: 16px;
+    transition: background 0.5s;
+    z-index: 1;
 }
 
-.container > img {
+.btn:hover {
+    background-color: #39823D;
+    color: #FFF9E2
+}
+
+.container > .box-1 > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +98,69 @@ header {
     border-radius: 60px 60px 0px 0px;
 }
 
-.container > h3 {
+.container > .box-1 > h3 {
     margin-top: 60px;
+}
+
+.container {
+    padding-bottom: 50px;
+    float: left;
+    width: 100%;
+}
+
+.back-green {
+    background-color: #AFBFA3;
+}
+
+.back-tan {
+    background-color: #FFF9E2;
+}
+
+.red-candy-back {
+    z-index: 1;
+    position: absolute;
+    height: 600px;
+}
+
+#red-candy-1 {
+    top: 100px;
+    left: -280px;
+}
+
+#red-candy-2 {
+    top: -20px;
+    right: -290px;
+    transform: scaleX(-1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.product-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px 10rem;
+    background-color: #39823D;
+}
+
+.homepage-category {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.homepage-category > img {
+    border-radius: 50px 50px 0 0;
+    max-height: 80%;
 }
