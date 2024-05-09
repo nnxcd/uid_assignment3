@@ -4,31 +4,32 @@ body {
 }
 
 header {
+    background-color: orange;
+    width: 100%;
     display: flex;
-    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
+    flex-direction: row;
 }
 
 .nav-item {
-    /* background-color: white; */
-    width: 33.3333%;
     height: 100px;
     margin: 0 20px;
+    background-color: red;
 }
 
 .nav-left > img {
     height: 100px;
-
 }
 
 .nav-middle {
     text-align: center;
+    width: 50%;
 }
 
 .nav-middle > ul > a > .nav-box {
     display: inline-block;
-    /* background-color: pink; */
     padding: 15px 2.5%;
 }
 
@@ -124,10 +125,15 @@ header {
     overflow-y: hidden;
 }
 
+.box-1 > img {
+    position: relative;
+    z-index: 1;
+}
+
 /* RED CANDY BAR GRAPHICS */
 .red-candy-back {
-    z-index: 1;
     position: absolute;
+    z-index: 0;
 }
 
 #red-candy-1 {
@@ -145,9 +151,10 @@ header {
 
 #red-candy-3 {
     top: 600px;
-    left: 150px;
+    /* left: 50px; */
+    left: 200px;
     height: 520px;
-    transform: rotate(-15deg)
+    transform: rotate(-15deg);
 }
 
 #red-candy-4 {
@@ -198,8 +205,8 @@ h2 {
     margin-right: auto;
     width: 20%;
     position: relative;
-    z-index: 2;
     transition: transform 0.5s;
+    z-index: 1;
 }
 
 .homepage-category:hover, .homepage-product:hover {
@@ -252,4 +259,49 @@ h2 {
 .homepage-category:hover .overlay {
     opacity: 0;
     transition: all 0.5s ease;
+}
+
+.search-section {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    background-color: green;
+    z-index: 3;
+}
+
+.search-bar {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-section > .search-bar > input {
+    width: 90%;
+    font-size: 30px;
+    padding: 7px 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-section > .search-bar > input:focus {
+    outline: none;
+}
+
+.search-section > .search-bar > img {
+    position: relative;
+    height: 25px;
+    top: 2px;
+}
+
+.search-section > .search-bar > #search-close {
+    right: 6px;
+}
+
+.search-section > .search-bar > #search-icon {
+    right: 91.5%;
 }
